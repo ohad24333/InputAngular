@@ -10,16 +10,6 @@ export class AppComponent {
   title = 'InputAndOutput';
 
   carsEnaum = CarsEnum;
-  isCarSelected: boolean = false;
-  car: string = "";
+  car: string = "Select Car";
 
-
-  handleSelectCar(car: string) {
-
-
-    if (car != "Select Car") {
-      this.car = car;
-      this.isCarSelected = true;
-    }else this.isCarSelected = false;
-  }
 }

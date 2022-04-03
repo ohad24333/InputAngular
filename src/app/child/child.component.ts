@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CarsEnum } from './enums/carEnum';
+import { Car } from './interfaces/Car';
 @Component({
   selector: 'app-child',
   templateUrl: './child.component.html',
@@ -11,7 +12,7 @@ export class ChildComponent implements OnInit {
 
   carsEnum = CarsEnum;
 
-  @Input() car : string = ""
+  @Input() car : string =""
   ngOnInit(): void {
   }
 
