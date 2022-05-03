@@ -1,4 +1,4 @@
-<select #carSelect (change)="handleSelectCar(carSelect.value)" class="form-select" aria-label="Select Car" >
+<select #carSelect [(ngModel)]="car" class="form-select" aria-label="Select Car" >{{car}}
   <option selected>Select Car</option>
   <option value={{carsEnaum.Mazda}}>Mazda</option>
   <option value={{carsEnaum.Tesla}}>Tesla</option>
